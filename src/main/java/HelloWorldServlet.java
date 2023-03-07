@@ -7,13 +7,12 @@ import java.io.PrintWriter;
 
 @WebServlet(name = "HelloWorldServlet", urlPatterns = "/hello")
 public class HelloWorldServlet extends HttpServlet {
-    private String name;
 
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
-        name = req.getParameter("name");
+        String name = req.getParameter("name");
 
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
-        out.println("<h1>Hello, "+name+"!</h1>");
+        out.println("<h1>Hello, "+ name +"!</h1>");
     }
 }
