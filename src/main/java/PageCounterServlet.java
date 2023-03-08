@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Objects;
 
-@WebServlet(name = "PageCounterServlet", urlPatterns = "/count")
+@WebServlet(name = "PageCounterServlet", urlPatterns = "/counter")
 public class PageCounterServlet extends HttpServlet {
     private int count = 0;
 
