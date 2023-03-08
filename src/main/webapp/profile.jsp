@@ -13,7 +13,7 @@
 </head>
 <body>
 <%@ include file="partials/navbar.jsp" %>
-<%@ include file="partials/head.jsp"%>
+<%@ include file="partials/head.jsp" %>
 <h1>help!</h1>
 </body>
 </html>

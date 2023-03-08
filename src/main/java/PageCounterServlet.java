@@ -12,7 +12,7 @@ public class PageCounterServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
         count++;
-        if(Objects.equals(req.getParameter("reset"), "y")){
+        if (Objects.equals(req.getParameter("reset"), "y")) {
             count = 0;
         }
         res.setContentType("text/html");
