@@ -12,7 +12,7 @@ import java.util.Date;
 public class Album implements Serializable {
     private int id;
     private String artist;
-    private String recordName;
+    private String albumName;
     private Date releaseDate;
     private float sales;
     private String genres;
