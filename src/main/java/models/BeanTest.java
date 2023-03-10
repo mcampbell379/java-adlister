@@ -5,9 +5,15 @@ import java.util.Date;
 
 public class BeanTest {
     public static void main(String[] args) {
-        Album album = new Album(0,"Pitbull","Worldwide",new Date(2021-12-25), 6.42,"Greatest music of all time");
-
-        System.out.println(album);
+        // use no args constructor when using beans
+        Album pitbullAlbum = new Album();
+        pitbullAlbum.setId(1);
+        pitbullAlbum.setArtist("Pitbull");
+        pitbullAlbum.setAlbumName("The World");
+        pitbullAlbum.setSales(20000000.99);
+        pitbullAlbum.setGenres("Greatest Music Of All Time");
+        pitbullAlbum.setReleaseDate(new Date(2020-12-25));
+        System.out.println(pitbullAlbum);
 
         Author robert = new Author("Robert", "Martini");
         Author bobert = new Author("Bobert", "Bambini");
