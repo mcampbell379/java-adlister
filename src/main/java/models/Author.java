@@ -11,9 +11,11 @@ import java.io.Serializable;
 @ToString
 public class Author implements Serializable {
     private int id;
-    private String name;
+    private String firstName;
+    private String lastName;
 
-    public Author(String name) {
-        this.name = name;
+    public Author(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 }
