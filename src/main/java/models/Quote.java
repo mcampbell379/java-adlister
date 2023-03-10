@@ -1,4 +1,4 @@
-package javabeans_exercises;
+package models;
 
 import lombok.*;
 
