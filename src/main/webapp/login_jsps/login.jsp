@@ -11,7 +11,7 @@
 <html>
 <head>
     <title>Title</title>
-    <link href="css/login.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
 </head>
 <%
     if (request.getParameter("username") != null && request.getParameter("username").equals("admin") && request.getParameter("password") != null && request.getParameter("password").equals("password")) {
@@ -19,8 +19,8 @@
     }
 %>
 <body>
-<%@ include file="partials/navbar.jsp" %>
-<%@ include file="partials/head.jsp" %>
+<%@ include file="../partials/navbar.jsp" %>
+<%@ include file="../partials/head.jsp" %>
 <div style="text-align: center;"><h1> Student Login Form </h1></div>
 <form action="login.jsp" method="post">
     <div class="container">
