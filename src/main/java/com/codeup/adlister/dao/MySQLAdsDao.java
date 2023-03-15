@@ -3,15 +3,12 @@ package com.codeup.adlister.dao;
 import com.codeup.adlister.models.Ad;
 import com.mysql.cj.jdbc.Driver;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MySQLAdsDao implements Ads {
-    private Connection connection = null;
+    private final Connection connection;
 
     public MySQLAdsDao(Config config) {
         try {
@@ -28,7 +25,7 @@ public class MySQLAdsDao implements Ads {
 
     @Override
     public List<Ad> all() {
-        Statement stmt = null;
+        Statement stmt;
         try {
             stmt = connection.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM ads");
